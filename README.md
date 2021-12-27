@@ -1,3 +1,3 @@
-# BordJS
+# Bord
 
 tbh idk
