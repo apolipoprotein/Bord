@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>enigma</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  </head>
+  <body>
+    <button id="sdbrBtn">&#9776;</button>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" id="clsBtn">&times;</a>
+      <a href="index.html">Enigma</a>
+      <a href="original.html">Caesar & Vigenere</a>
+      <a href="game.html">Game</a>
+    </div>
+    <p id="dat"><span id="clock"></span><br><span id="dotw"></span>, <span id="mnth"></span> <span id="dt"></span></p>
+    <h1>Rly Jank Enigma</h1>
+    <br><br>
+    <div id="toopoor"><br><br><h2>SORRY YOU'RE TOO POOR TO SEE THIS WEBSITE<br>COME BACK WHEN YOU CAN AFFORD A BIGGER SCREEN</h2></div>
+    <div id="main">
+      <div id="left">
+        <h3>Initial Rotor Position History</h3>
+        <p id="hist"></p>
+      </div>
+      <div id="mid">
+        <div id="rtrshow">
+          <div id="rtrinsd">
+            <h3>Rotor Positions</h3>
+            <div id="rots">
+              <p id="rot1"><input type='number' class="rotvals"><br></p>
+              <p id="rot2"><input type='number' class="rotvals"><br></p>
+              <p id="rot3"><input type='number' class="rotvals"><br></p>
+            </div>
+            <div id="ConOpt33">
+              <h5>Rotor 1: <span class="opt33"></span></h5>
+              <h5>Rotor 2: <span class="opt33"></span></h5>
+              <h5>Rotor 3: <span class="opt33"></span></h5>
+            </div>
+            <button id="clear">Clear</button>
+            <br>
+            <div id="side">
+              <p>Input: <span id="first"></span></p>
+              <p>Output: <span id="last"></span></p>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div id="kbdborder">
+          <div id="keyboard">
+            <h3>Keyboard</h3>
+            <div id="panel">
+                <div id="row1">
+                  <div><input type="button" value="q" class='kybrd'></div>
+                  <div><input type="button" value="w" class='kybrd'></div>
+                  <div><input type="button" value="e" class='kybrd'></div>
+                  <div><input type="button" value="r" class='kybrd'></div>
+                  <div><input type="button" value="t" class='kybrd'></div>
+                  <div><input type="button" value="y" class='kybrd'></div>
+                  <div><input type="button" value="u" class='kybrd'></div>
+                  <div><input type="button" value="i" class='kybrd'></div>
+                  <div><input type="button" value="o" class='kybrd'></div>
+                  <div><input type="button" value="p" class='kybrd'></div>
+                </div><br>
+                <div id="row2">
+                  <div><input type="button" value="a" class='kybrd'></div>
+                  <div><input type="button" value="s" class='kybrd'></div>
+                  <div><input type="button" value="d" class='kybrd'></div>
+                  <div><input type="button" value="f" class='kybrd'></div>
+                  <div><input type="button" value="g" class='kybrd'></div>
+                  <div><input type="button" value="h" class='kybrd'></div>
+                  <div><input type="button" value="j" class='kybrd'></div>
+                  <div><input type="button" value="k" class='kybrd'></div>
+                  <div><input type="button" value="l" class='kybrd'></div>
+                </div><br>
+                <div id="row3">
+                  <div><input type="button" value="z" class='kybrd'></div>
+                  <div><input type="button" value="x" class='kybrd'></div>
+                  <div><input type="button" value="c" class='kybrd'></div>
+                  <div><input type="button" value="v" class='kybrd'></div>
+                  <div><input type="button" value="b" class='kybrd'></div>
+                  <div><input type="button" value="n" class='kybrd'></div>
+                  <div><input type="button" value="m" class='kybrd'></div>
+                </div>
+              </div>
+          </div><br>
+        </div>
+      </div>
+    </div>
+
+    <script src="enigma.js"></script>
+    <script src="time.js"></script>
+    <script src="sidebar.js"></script>
+  </body>
+</html>

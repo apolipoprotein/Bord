@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>meow</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="/favicon/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <button id="sdbrBtn">&#9776;</button>
+    <div id="mySidebar" class="sidebar">
+      <a href="javascript:void(0)" class="closebtn" id="clsBtn">&times;</a>
+      <a href="index.html">Enigma</a>
+      <a href="original.html">Caesar & Vigenere</a>
+      <a href="game.html">Game</a>
+    </div>
+    <p id="dat"><span id="clock"></span><br><span id="dotw"></span>, <span id="mnth"></span> <span id="dt"></span></p>
+    <h1>Rlly Jank Encrypt</h1>
+    <br><br>
+    <div id="toopoor"><br><br><h2>SORRY YOU'RE TOO POOR TO SEE THIS WEBSITE<br>COME BACK WHEN YOU CAN AFFORD A BIGGER SCREEN</h2></div>
+    <div id="main1">
+      <div id="box1">
+        <label for="name">Input Your Name: </label>
+        <input type="text" id="giveNm" name="name" placeholder="put text here"><br><br>
+
+        <label for="gimmeWrd">Input Phrase to Encrypt: </label>
+        <input type="text" id="givePhrs" name="gimmeWrd" placeholder="put text here"><br>
+        <p id="errorMsg"></p><br>
+        
+        <label for="selectEcrpt">Select Encryption Method: </label><br>
+        <input type="radio" name="selectEcrpt" id="Caesar" value="caesar"><label for="Caesar">Caesar Cipher</label><br>
+        <input type="radio" name="selectEcrpt" id="Vigenere" value="vigenere"><label for="Vigenere">Vigenere Cipher</label><br>
+        <input type="radio" name="selectEcrpt" id="Bothciph" value="both"><label for="Bothciph">Both Ciphers</label><br><br>
+
+        <input type="button" value="Next Step" id="nxtStep"><br><br>
+      </div>
+    </div>
+    <br>
+    <div id="a1">
+      <label for="shiftky">Input Shift: </label><input type="number" name="shiftshift" id="shiftky"><br><br>
+      <input type="button" value="Next Step" id="secStep1">
+    </div>
+    <div id="a2">
+      <label for="shiftphrs">Input Shift Phrase: </label><input type="text" name="shiftphrase" id="shftphrs"><br><br>
+      <input type="button" value="Next Step" id="secStep2">
+    </div>
+    <div id="a4">
+      <label for="Bshiftky">Input Shift: </label><input type="number" id="Bshiftky"><br>
+      <label for="Bshiftphrs">Input Shift Phrase: </label><input type="text" id="Bshiftphrs"><br><br>
+      <input type="button" value="Next Step" id="secStep3">
+    </div>
+    <br>
+
+    <div id="opt2Box">
+      <p id="output2"></p>
+
+      <div id="a3">
+        <input type="button" value="Clear" id="clearBtn">
+        </div>
+    </div>
+
+
+    <script src="original.js"></script>
+    <script src="time.js"></script>
+    <script src="sidebar.js"></script>
+    
+  </body>
+</html>
